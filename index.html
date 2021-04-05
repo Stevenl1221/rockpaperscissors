@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="game.js" async></script>
+        <link rel="stylesheet" href="/index.css">
+    </head>
+<body>
+    <div class="bg-img">
+        <nav>
+            <ul class="navigation">
+                <button class="btn-toggle btndark">Toggle Dark-Mode</button>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Rock Paper Scissors</h1>
+            <h2>First to 5 wins!</h2>
+    
+            <div class="buttons">
+                <button class="btn" id="rock"><img src="images/stone.jpg" alt="rock image"/></button>
+                <button class="btn" id="paper"><img src="images/paper.jpg" alt="paper image"/></button>
+                <button class="btn" id="scissors"><img src="images/shears.jpg" alt="scissors image"/></button>
+            </div>
+            <div class="text_scores">
+                <p class="text" class="scoresbox" id="player-score">Player Score: </p>
+                <p class="text" class="scoresbox" id="comp-score">Computer Score: </p>
+            </div>
+            <div class="msg">
+                <p class="text" id="output">Good luck!</p>
+            </div>
+            <div>
+                <button class="playagain" onClick="window.location.reload();">Play Again</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
