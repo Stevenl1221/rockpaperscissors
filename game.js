@@ -8,7 +8,6 @@ btn.addEventListener("click", function() {
     document.getElementById("player-score").classList.toggle("dark-text");
     document.getElementById("comp-score").classList.toggle("dark-text");
     document.getElementById("output").classList.toggle("dark-text");
-
     
 });
 
@@ -100,13 +99,12 @@ function playGame() {
     computer.textContent = `Computer Score: ${compScore}`;
     
     if (playerScore==5) {
-        output.textContent = `YOU WON! The score was ${playerScore} - ${compScore}.`;
+        document.getElementById("output").innerHTML = '<span class= "green">YOU WON! </span>' + ` The score was ${playerScore} - ${compScore}.`
         
     }
-    
-    else if (compScore==5) {
-        output.textContent = `YOU LOST! The score was ${playerScore} - ${compScore}. yikes...`;
 
+    else if (compScore==5) {
+        document.getElementById("output").innerHTML = '<span class= "red">YOU LOST! </span>' + ` The score was ${playerScore} - ${compScore}.`
     }
 
 }

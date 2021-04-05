@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 45px;
+    margin-top: 40px;
 }
 
 .dark-theme {
@@ -110,3 +110,10 @@ img {
 
 }
 
+.red {
+    color: rgb(194, 68, 68);
+}
+
+.green {
+    color: rgb(48, 221, 86);
+}
